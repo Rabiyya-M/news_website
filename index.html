@@ -1,0 +1,4258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./resources/style.css" />
+    <!-- <link rel="stylesheet" href="./resources/responsive.css" /> -->
+    <title>DNEWS</title>
+  </head>
+  <body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+    <span aria-hidden="true" style="color: white;">&times;</span>
+  </button>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+  
+    <div class="modal-content">
+      <input class="search-input" type="text" placeholder="Seacrh Keyboard">
+      <i class="fas fa-search"></i>
+    </div>
+  </div>
+</div>
+<!-- End of modal -->
+
+
+<!-- Topbar -->
+<div class="topbar topbar-gray mb-3">
+      <div class="container">
+        <div class="row align-item-center">
+          <div class="col-lg-9 col-md-10 col-sm-12 align-item-center px-4">
+            <div class="trending">
+              <div class="trending-bar">
+                <div class="row">
+                  <div class="col-lg-9">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 text-center">
+                        <span class="trending-title">
+                          <i class="fas fa-bolt"></i> Trending
+                        </span>
+                      </div>
+                      <div class="col-lg-9 col-md-9">
+                        <div
+                          id="tredingcarousel"
+                          class="
+                            trending-slide
+                            carousel
+                            slide
+                            trending-slide-bg
+                          "
+                          data-ride="carousel"
+                        >
+                          <div
+                            class="
+                              carousel-inner
+                              text-center text-lg-left text-md-left
+                            "
+                          >
+                            <div class="carousel-item active">
+                              <div class="post-content">
+                                <p class="post-title title-small">
+                                  <a href="#">
+                                    Ratcliffe to be Director of nation talent
+                                    Trump ignored</a
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div class="post-content">
+                                <p class="post-title title-small">
+                                  <a href="#"
+                                    >Nancy multi Chinese business woman
+                                    trying</a
+                                  >
+                                </p>
+                              </div>
+                              <!--/.most-view-item-content -->
+                            </div>
+                            <div class="carousel-item">
+                              <div class="post-content">
+                                <p class="post-title title-small">
+                                  <a href="#"
+                                    >Harbour amid a Slowen down in singer city
+                                    screening</a
+                                  >
+                                </p>
+                              </div>
+                              <!--/.most-view-item-content -->
+                            </div>
+                            <div class="carousel-item">
+                              <div class="post-content">
+                                <p class="post-title title-small">
+                                  <a href="#"
+                                    >Class property employ ancho red multi level
+                                    mansion</a
+                                  >
+                                </p>
+                              </div>
+                        
+                            </div>
+                            <div class="carousel-item">
+                              <div class="post-content">
+                                <p class="post-title title-small">
+                                  <a href="#"
+                                    >The secret to moving this ancient sphinx
+                                    screening</a
+                                  >
+                                </p>
+                              </div>
+                    
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              col-lg-3 col-md-2 col-sm-12
+              align-item-center
+              text-right text-sm-center
+            "
+          >
+            <ul class="top-info text-center">
+              <li>
+                <i class="fas fa-calendar-check" aria-hidden="true"></i> June
+                15, 2021
+              </li>
+            </ul>
+          </div>
+
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+      </div>
+</div>
+<!-- End of topbar -->
+
+<!-- Banner -->
+<div class="container topbanner my-3">
+      <div class="row mt-3">
+        <div class="col-lg-4 col-md-4 align-self-center">
+          <div class="logo-area">
+            <img src="./resources/images/logo.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8">
+          <div class="banner">
+            <img src="./resources/images/header_banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+</div>
+<!-- End of Banner -->
+
+<!-- Navigation -->
+<div class="container-fluid  navigation " style="background-image: linear-gradient( 20deg,#f84270 0%,#fe803b 100%);">
+      <nav class="navbar navbar-expand-xl navbar-dark container align-items-xl-center">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-social">
+          <ul class="xs-social-list xs-social-list-v6 digiqole-social-list">
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li> <button class="search " data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-search"></i></button></li>
+          </ul>
+      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="categories.html" target="_self"
+                >Technology <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="categories.html" target="_self"
+                > Travel<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" 
+                > Video<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+              Lifestyle
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="categories.html" target="_self">Health</a>
+                <a class="dropdown-item" href="categories.html" target="_self">Sport</a>
+                <a class="dropdown-item" href="categories.html" target="_self">Travel</a>
+                <a class="dropdown-item" href="categories.html" target="_self">Fashion</a>
+              </div>
+            </li>
+          </ul>
+        </div>      
+      </nav>
+    
+ </div>
+<!-- End of Navigation -->
+
+
+<!-- Home -->
+<div class="container home">
+    <div class="row">
+      <div class=" col-xl-8 col-lg-12 p-3 home-carousel">
+        <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel">
+        <ol class="carousel-indicators top-weekend-indicator">
+          <li
+            data-target="#carouselExampleControls"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-target="#carouselExampleControls"
+            data-slide-to="1"
+          ></li>
+          <li
+            data-target="#carouselExampleControls"
+            data-slide-to="2"
+            
+          ></li>       
+        </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="single-box-home">
+                <a href="./news.html" target="_blank" >
+                  <div class="img-area">
+                    <img
+                        src="./resources/images/fashion_4.jpg"
+                        alt="First slide" />
+                  </div>
+                </a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h2>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h2>
+                    </div>
+                    <ul class="post-meta-info d-flex">
+                      <li class="author">
+                        <i class="fas fa-user"></i>
+                        <span href=""> digiQoles </span>
+                      </li>
+                      <li class="author">
+                        <i class="fas fa-clock"></i>
+                        <span href=""> June 30, 2019 </span>
+                      </li>
+                      <li class="author">
+                        <i class="fas fa-fire"></i>
+                        <span href=""> 3918 </span>
+                      </li>
+                    </ul>
+                  </div>               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="single-box-home">
+               <a href="./news.html" target="_blank">
+                <div class="img-area">
+                  <img  src="./resources/images/travel_1.jpg"
+                      alt="First slide" />
+                </div>
+               </a>
+                <div class="img-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h2>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h2>
+                  </div>
+                  <ul class="post-meta-info d-flex">
+                    <li class="author">
+                      <i class="fas fa-user"></i>
+                      <span href=""> digiQoles </span>
+                    </li>
+                    <li class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href=""> June 30, 2019 </span>
+                    </li>
+                    <li class="author">
+                      <i class="fas fa-fire"></i>
+                      <span href=""> 3918 </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="single-box-home">
+               <a href="./news.html" target="_blank"> <div class="img-area">
+                <img   src="./resources/images/sports_1-455x300.jpg"
+                    alt="First slide" />
+              </div></a>
+                <div class="img-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h2>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h2>
+                  </div>
+                  <ul class="post-meta-info d-flex">
+                    <li class="author">
+                      <i class="fas fa-user"></i>
+                      <span href=""> digiQoles </span>
+                    </li>
+                    <li class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href=""> June 30, 2019 </span>
+                    </li>
+                    <li class="author">
+                      <i class="fas fa-fire"></i>
+                      <span href=""> 3918 </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+      <div class="col-xl-4 col-lg-12  home-right p-3" >
+        <div class="single-box-home-up mb-3">
+          <a href="./news.html" target="_blank"><div class="img-area">
+            <img
+                src="./resources/images/sports_3.jpg"
+                alt="First slide" />
+          </div></a>
+          <div class="img-text">
+            <div class="grid-category">
+              <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+            </div>
+            <div class="post-title">
+              <h5>
+                <a href="">
+                  The billionaire Philan thropist read to learn more
+                  and city
+                </a>
+              </h5>
+            </div>
+            <ul class="post-meta-info d-flex">
+              <li class="author">
+                <i class="fas fa-user"></i>
+                <a href=""> digiQoles </a>
+              </li>
+              <li class="author">
+                <i class="fas fa-clock"></i>
+                <a href=""> June 30, 2019 </a>
+              </li>
+              <li class="author">
+                <i class="fas fa-fire"></i>
+                <a href=""> 3918 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="single-box-home-down mt-3">
+         <a href="./news.html" target="_blank"> <div class="img-area">
+          <img
+              src="./resources/images/travel_2-455x300.jpg"
+              alt="First slide"
+          />
+        </div></a>
+          <div class="img-text">
+            <div class="grid-category">
+              <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+            </div>
+            <div class="post-title">
+              <h5>
+                <a href="">
+                  The billionaire Philan thropist read to learn more
+                  and city
+                </a>
+              </h5>
+            </div>
+            <ul class="post-meta-info d-flex">
+              <li class="author">
+                <i class="fas fa-user"></i>
+                <a href=""> digiQoles </a>
+              </li>
+              <li class="author">
+                <i class="fas fa-clock"></i>
+                <a href=""> June 30, 2019 </a>
+              </li>
+              <li class="author">
+                <i class="fas fa-fire"></i>
+                <a href=""> 3918 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+</div>
+<!-- End of home -->
+
+
+<!--First Carousel  -->
+<div class="container first-carousel">
+  <div class="row">
+    <div class="col-lg-12 px-3">
+      <div class="text my-3">
+        <h6>Weekend Top</h6>
+      </div>
+      <div
+        id="carouselExampleIndicators2"
+        class="carousel slide"
+        data-ride="carousel">
+        <ol class="carousel-indicators top-weekend-indicator">
+           <li
+            data-target="#carouselExampleIndicators2"
+            data-slide-to="0"
+            class="active"
+            ></li>
+           <li
+            data-target="#carouselExampleIndicators2"
+            data-slide-to="1"
+            ></li>
+            <li
+            data-target="#carouselExampleIndicators2"
+            data-slide-to="2" ></li>
+            <li
+            data-target="#carouselExampleIndicators2"
+            data-slide-to="3" ></li>
+            <li
+            data-target="#carouselExampleIndicators2"
+            data-slide-to="4" ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12 px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img                 
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-md-block d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img                    
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                 <a href="./news.html" target="_blank"> <div class="img-area">
+                  <img  
+                    src="./resources/images/tech_1-600x398.jpg"
+                    alt="First slide"/>
+                </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+               <a href="./news.html" target="_blank">   <div class="img-area">
+                <img               
+                  src="./resources/images/tech_1-600x398.jpg"
+                  alt="First slide"/>
+              </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12  px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img                  
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-md-block d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img                   
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img                   
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img                      
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12  px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-md-block px-3 d-none">
+                <div class="single-box top-weekend">
+                 <a href="./news.html" target="_blank"> <div class="img-area">
+                  <img                
+                    src="./resources/images/tech_1-600x398.jpg"
+                    alt="First slide"
+                  />
+                </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend ">
+                  <a href="./news.html" target="_blank"><div class="img-area ">
+                    <img                    
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      class="w-100"
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12  px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-md-block px-3 d-none">
+                <div class="single-box top-weekend">
+                 <a href="./news.html" target="_blank"> <div class="img-area">
+                  <img                
+                    src="./resources/images/tech_1-600x398.jpg"
+                    alt="First slide"
+                  />
+                </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend ">
+                  <a href="./news.html" target="_blank"><div class="img-area ">
+                    <img                    
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      class="w-100"
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12  px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-md-block px-3 d-none">
+                <div class="single-box top-weekend">
+                 <a href="./news.html" target="_blank"> <div class="img-area">
+                  <img                
+                    src="./resources/images/tech_1-600x398.jpg"
+                    alt="First slide"
+                  />
+                </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend ">
+                  <a href="./news.html" target="_blank"><div class="img-area ">
+                    <img                    
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      class="w-100"
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span href="">June 30, 2019 </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of carousel -->
+
+
+<!-- Whats news -->
+<div class="container">
+  <div class="row">
+    <div class="col-xl-8 col-lg-12 my-3" >
+      <div class="row">
+        <div class="col-lg-12 my-3">
+          <div class="text news-text"> 
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-12">
+              <h6>WHAT'S NEW</h6>    
+              
+            </div>
+            <div class="col-xl-9 col-lg-9  col-md-9 col-12" >
+                 <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active show"
+                    id="all-tab"
+                    data-toggle="tab"
+                    href="#all"
+                    role="tab"
+                    aria-controls="all"
+                    aria-selected="true"
+                    >All</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="lifestyle-tab"
+                    data-toggle="tab"
+                    href="#lifestyle"
+                    role="tab"
+                    aria-controls="lifestyle"
+                    aria-selected="false"
+                    >LifeStyle</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="travel-tab"
+                    data-toggle="tab"
+                    href="#travel"
+                    role="tab"
+                    aria-controls="travel"
+                    aria-selected="false"
+                    >Travel</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="fashion-tab"
+                    data-toggle="tab"
+                    href="#fashion"
+                    role="tab"
+                    aria-controls="fashion"
+                    aria-selected="false"
+                    >Fashion</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="sports-tab"
+                    data-toggle="tab"
+                    href="#sports"
+                    role="tab"
+                    aria-controls="sports"
+                    aria-selected="false"
+                    >Sports</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="tech-tab"
+                    data-toggle="tab"
+                    href="#tech"
+                    role="tab"
+                    aria-controls="tech"
+                    aria-selected="false"
+                    >Tech</a
+                  >
+                </li>
+                 </ul> 
+            </div>
+          </div>    
+        </div>     
+        </div>
+      </div>
+     <div class="row">
+      <div class="col-lg-12 news">
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade active show"
+            id="all"
+            role="tabpanel"
+            aria-labelledby="all-tab">
+            <div class="row">
+              <div class="col-md-6 p-3">  
+                <a href="./news.html" target="_blank">           
+                <div class="img-area-news">             
+                  <img
+                    src="./resources/images/food_6-600x398.jpg"
+                    alt=""
+                    class="w-100"/>   
+                </div></a>
+              <div class="img-text-news">
+                <a href="#"><h4>The property complete with a 30-seat screen img</h4></a>
+                  <ul class="post-meta-info d-flex ">
+                    <li class="author">
+                      <i class="fas fa-user"></i>
+                      <a href="" ><span> digiQoles  </span></a>
+                    </li>
+                    <li class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="" >  June 30, 2019 </a>
+                    </li>
+                  </ul>
+                </div>
+           
+                <p>
+                  Struggling to sell one multi-million dollar home currently
+                  on the market won’t stop actress and singer Jennifer Lopez
+                  from expanding 
+                </p>
+             
+              </div>
+              <div class="col-md-6  p-3" >
+                <ul class="whatsnew">
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/travel_1.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                          <a href="#"><span class="tags fashion">FASHION</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                      <a href="#"> <span class="tags travel">Travel</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/tech_5-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags health">Health</span></a>
+                       <a href="#"> <h6>
+                        The property complete with a 30-seat screen img
+                      </h6></a>
+                        <span>
+                          <i class="fas fa-clock text-dark"></i>
+                          <a href="" class="text-dark">
+                            June 30, 2019
+                          </a></span
+                        >
+                      </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/fashion_2.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6  col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags sport">sports</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="lifestyle"
+            role="tabpanel"
+            aria-labelledby="lifestyle-tab">
+            <div class="row">
+              <div class="col-md-6 p-3">           
+                <a href="./news.html" target="_blank">           
+                  <div class="img-area-news">             
+                    <img
+                      src="./resources/images/food_6-600x398.jpg"
+                      alt=""
+                      class="w-100"/>   
+                  </div></a>
+                <div class="img-text-news">
+                <a href="#"><h4>The property complete with a 30-seat screen img</h4></a>
+                <ul class="post-meta-info d-flex">
+                  <li class="author">
+                    <i class="fas fa-user"></i>
+                    <a href="" class="text-dark"> digiQoles </a>
+                  </li>
+                  <li class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="" class="text-dark"> June 30, 2019 </a>
+                  </li>
+                </ul>
+              </div>
+                <p>
+                  Struggling to sell one multi-million dollar home currently
+                  on the market won’t stop actress and singer Jennifer Lopez
+                  from expanding
+                </p>
+              </div>
+              <div class="col-md-6 p-3">
+                <ul class="whatsnew">
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/travel_1.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                          <a href="#"><span class="tags fashion">FASHION</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                      <a href="#"> <span class="tags travel">Travel</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags health">Health</span></a>
+                       <a href="#"> <h6>
+                        The property complete with a 30-seat screen img
+                      </h6></a>
+                        <span>
+                          <i class="fas fa-clock text-dark"></i>
+                          <a href="" class="text-dark">
+                            June 30, 2019
+                          </a></span
+                        >
+                      </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6  col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags sport">sports</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div  
+            class="tab-pane fade"
+            id="travel"
+            role="tabpanel"
+            aria-labelledby="travel-tab"
+          >
+            <div class="row">
+              <div class="col-md-6 p-3">
+                <a href="./news.html" target="_blank">           
+                  <div class="img-area-news">             
+                    <img
+                      src="./resources/images/food_6-600x398.jpg"
+                      alt=""
+                      class="w-100"/>   
+                  </div></a>
+              
+                  <div class="img-text-news">
+                    <a href="#"><h4>The property complete with a 30-seat screen img</h4> </a>
+                    <ul class="post-meta-info d-flex text-dark">
+                      <li class="author">
+                        <i class="fas fa-user"></i>
+                        <a href="" class="text-dark"> digiQoles </a>
+                      </li>
+                      <li class="author">
+                        <i class="fas fa-clock"></i>
+                        <a href="" class="text-dark"> June 30, 2019 </a>
+                      </li>
+                    </ul>
+                  </div>          
+                <p>
+                  Struggling to sell one multi-million dollar home currently
+                  on the market won’t stop actress and singer Jennifer Lopez
+                  from expanding
+                </p>
+              </div>
+              <div class="col-md-6 p-3">
+                <ul class="whatsnew">
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/travel_1.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                          <a href="#"><span class="tags fashion">FASHION</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                      <a href="#"> <span class="tags travel">Travel</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags health">Health</span></a>
+                       <a href="#"> <h6>
+                        The property complete with a 30-seat screen img
+                      </h6></a>
+                        <span>
+                          <i class="fas fa-clock text-dark"></i>
+                          <a href="" class="text-dark">
+                            June 30, 2019
+                          </a></span
+                        >
+                      </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6  col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags sport">sports</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="fashion"
+            role="tabpanel"
+            aria-labelledby="fashion-tab"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <a href="./news.html" target="_blank">           
+                  <div class="img-area-news">             
+                    <img
+                      src="./resources/images/food_6-600x398.jpg"
+                      alt=""
+                      class="w-100"/>   
+                  </div></a>
+                <div class="img-text-news">
+                 <a href="#"> <h4>The property complete with a 30-seat screen img</h4></a>
+                  <ul class="post-meta-info d-flex text-dark">
+                    <li class="author">
+                      <i class="fas fa-user"></i>
+                      <a href="" class="text-dark"> digiQoles </a>
+                    </li>
+                    <li class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="" class="text-dark"> June 30, 2019 </a>
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  Struggling to sell one multi-million dollar home currently
+                  on the market won’t stop actress and singer Jennifer Lopez
+                  from expanding
+                </p>
+              </div>
+              <div class="col-md-6">
+                <ul class="whatsnew">
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/travel_1.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                          <a href="#"><span class="tags fashion">FASHION</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                      <a href="#"> <span class="tags travel">Travel</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags health">Health</span></a>
+                       <a href="#"> <h6>
+                        The property complete with a 30-seat screen img
+                      </h6></a>
+                        <span>
+                          <i class="fas fa-clock text-dark"></i>
+                          <a href="" class="text-dark">
+                            June 30, 2019
+                          </a></span
+                        >
+                      </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6  col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags sport">sports</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="sports"
+            role="tabpanel"
+            aria-labelledby="sport-tab"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <a href="./news.html" target="_blank">           
+                  <div class="img-area-news">             
+                    <img
+                      src="./resources/images/food_6-600x398.jpg"
+                      alt=""
+                      class="w-100"/>   
+                  </div></a>
+                <div class="img-text-news">
+            <a href="#"> <h4>The property complete with a 30-seat screen img</h4></a>
+                  <ul class="post-meta-info d-flex text-dark">
+                    <li class="author">
+                      <i class="fas fa-user"></i>
+                      <a href="" class="text-dark"> digiQoles </a>
+                    </li>
+                    <li class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="" class="text-dark"> June 30, 2019 </a>
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  Struggling to sell one multi-million dollar home currently
+                  on the market won’t stop actress and singer Jennifer Lopez
+                  from expanding
+                </p>
+              </div>
+              <div class="col-md-6">
+                <ul class="whatsnew">
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/travel_1.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                          <a href="#"><span class="tags fashion">FASHION</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                      <a href="#"> <span class="tags travel">Travel</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags health">Health</span></a>
+                       <a href="#"> <h6>
+                        The property complete with a 30-seat screen img
+                      </h6></a>
+                        <span>
+                          <i class="fas fa-clock text-dark"></i>
+                          <a href="" class="text-dark">
+                            June 30, 2019
+                          </a></span
+                        >
+                      </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6  col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags sport">sports</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tech"
+            role="tabpanel"
+            aria-labelledby="tech-tab"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <a href="./news.html" target="_blank">           
+                  <div class="img-area-news">             
+                    <img
+                      src="./resources/images/food_6-600x398.jpg"
+                      alt=""
+                      class="w-100"/>   
+                  </div></a>
+                <div class="img-text-news">
+                <a href="#">  <h4>Best garden wing supplies for the horticu ltural</h4></a>
+                  <ul class="post-meta-info d-flex text-dark">
+                    <li class="author">
+                      <i class="fas fa-user"></i>
+                      <a href="" class="text-dark"> digiQoles </a>
+                    </li>
+                    <li class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="" class="text-dark"> June 30, 2019 </a>
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  Struggling to sell one multi-million dollar home currently
+                  on the market won’t stop actress and singer Jennifer Lopez
+                  from expanding
+                </p>
+              </div>
+              <div class="col-md-6">
+                <ul class="whatsnew">
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/travel_1.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                          <a href="#"><span class="tags fashion">FASHION</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                        <div class="img-text-news">
+                      <a href="#"> <span class="tags travel">Travel</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6 col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags health">Health</span></a>
+                       <a href="#"> <h6>
+                        The property complete with a 30-seat screen img
+                      </h6></a>
+                        <span>
+                          <i class="fas fa-clock text-dark"></i>
+                          <a href="" class="text-dark">
+                            June 30, 2019
+                          </a></span
+                        >
+                      </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row mb-3">
+                      <div class="col-md-6 col-5">
+                        <a href="./news.html" target="_blank">           
+                          <div class="img-area-news">             
+                            <img
+                              src="./resources/images/food_6-600x398.jpg"
+                              alt=""
+                              class="w-100"/>   
+                          </div></a>
+                      </div>
+                      <div class="col-md-6  col-7 pl-2">
+                       <div class="img-text-news">
+                        <a href="#"><span class="tags sport">sports</span></a>
+                          <a href="#"><h6>
+                            The property complete with a 30-seat screen img
+                          </h6></a>
+                          <span>
+                            <i class="fas fa-clock text-dark"></i>
+                            <a href="" class="text-dark">
+                              June 30, 2019
+                            </a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-xl-4 col-lg-12 d-lg-block d-xl-block">
+     <div class="row">
+       <div class="col-lg-12">
+        <div class="text follow-text">
+          <h6>FOLLOW US</h6>
+        </div>
+       </div>
+     </div>
+      <div class="row px-3" >
+        <div class="col-lg-6 col-6 p-2" >
+          <div class="follow-us">
+            <a href="">
+              <span><i class="fab fa-facebook"></i></span>
+              <span>8,047</span>
+              <span>Fans</span>
+            </a>
+          </div>
+          <div class="follow-us">
+            <a href="">
+              <span><i class="fab fa-instagram"></i></span>
+              <span>8,047</span>
+              <span>Fans</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-6 p-2"  >
+          <div class="follow-us">
+            <a href="">
+              <span><i class="fab fa-twitter"></i></span>
+              <span>8,047</span>
+              <span>Fans</span>
+            </a>
+          </div>
+          <div class="follow-us">
+            <a href="">
+              <span><i class="fab fa-youtube"></i></span>
+              <span>8,047</span>
+              <span>Fans</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row px-2 side-banner">
+        <div class="col-lg-12 d-xl-block d-lg-none d-md-none d-none">
+          <div class="discount">
+            <a href="#"><img
+              src="./resources/images/sidebar_banner.png"
+              class="w-100"
+              alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of whats new -->
+
+
+<!-- Lifestyle -->
+<div class="container lifestyle-container">
+  <div class="row">
+    <div class="col-xl-8 col-lg-12 col-12 lifestyle-left mt-3">
+      <div class="text lifestyle-text">
+        <h5>Lifestyle</h5>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6">
+        <div class="single-box-lifestyle">
+          <a href="./news.html" target="_blank">  
+            <div class="img-area-lifestyle">                    
+                <img src="./resources/images/food_6-600x398.jpg" alt="" />
+            </div>
+          </a>
+            <div class="img-text-lifestyle">
+              <a href="./news.html" target="_blank"><h4>The property complete with a 30-seat screen img</h4></a>
+              <span class="author">
+                <i class="fas fa-user"></i>
+                <span> digiQoles </span>
+              </span>
+              <span class="author">
+                <i class="fas fa-clock"></i>
+                <span> June 30, 2019 </span>
+              </span>
+            </div>
+        </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6">         
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6" >
+            <div class="single-box-lifestyle">
+              <a href="./news.html" target="_blank">  
+                <div class="lifestyle-card">                    
+                    <img src="./resources/images/food_6-600x398.jpg" alt="" />
+                </div>
+              </a>
+                <div class="lifestyle-card-text">
+                  <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+                  <span class="author">
+                    <i class="fas fa-user"></i>
+                    <span> digiQoles </span>
+                  </span>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <span> June 30, 2019 </span>
+                  </span>
+                </div>
+            </div>
+          </div> 
+          <div class="col-xl-6 col-lg-6 col-md-6" >
+            <div class="single-box-lifestyle">
+              <a href="./news.html" target="_blank">  
+                <div class="lifestyle-card">                    
+                    <img src="./resources/images/food_6-600x398.jpg" alt="" />
+                </div>
+              </a>
+                <div class="lifestyle-card-text">
+                  <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+                  <span class="author">
+                    <i class="fas fa-user"></i>
+                    <span> digiQoles </span>
+                  </span>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <span> June 30, 2019 </span>
+                  </span>
+                </div>
+            </div>
+          </div> 
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6" >
+              <div class="single-box-lifestyle">
+                <a href="./news.html" target="_blank">  
+                  <div class="lifestyle-card">                    
+                      <img src="./resources/images/food_6-600x398.jpg" alt="" />
+                  </div>
+                </a>
+                  <div class="lifestyle-card-text">
+                    <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+                    <span class="author">
+                      <i class="fas fa-user"></i>
+                      <span> digiQoles </span>
+                    </span>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span> June 30, 2019 </span>
+                    </span>
+                  </div>
+              </div>
+            </div> 
+            <div class="col-xl-6 col-lg-6 col-md-6" >
+              <div class="single-box-lifestyle">
+                <a href="./news.html" target="_blank">  
+                  <div class="lifestyle-card">                    
+                      <img src="./resources/images/food_6-600x398.jpg" alt="" />
+                  </div>
+                </a>
+                  <div class="lifestyle-card-text">
+                    <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+                    <span class="author">
+                      <i class="fas fa-user"></i>
+                      <span> digiQoles </span>
+                    </span>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <span> June 30, 2019 </span>
+                    </span>
+                  </div>
+              </div>
+            </div> 
+        </div>    
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-12  lifestyle-right mt-3">
+      <ul class="nav nav-tabs" id="myTab2" role="tablist">
+        <li class="nav-item">
+          <a
+          
+            class="nav-link active"
+            id="recent-tab"
+            data-toggle="tab"
+            href="#recent"
+            role="tab"
+            aria-controls="recent"
+            aria-selected="true"
+            >Recents</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="popular-tab"
+            data-toggle="tab"
+            href="#popular"
+            role="tab"
+            aria-controls="popular"
+            aria-selected="false"
+            >Popular</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="comment-tab"
+            data-toggle="tab"
+            href="#comment"
+            role="tab"
+            aria-controls="comment"
+            aria-selected="false"
+            >Comment</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent2">
+        <div
+          class="tab-pane show active"
+          id="recent"
+          role="tabpanel"
+          aria-labelledby="recent-tab" >
+          <ul class="recent">
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/fashion_4.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/health_1-455x300.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/tech_4.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/travel_5-600x398.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="tab-pane"
+          id="popular"
+          role="tabpanel"
+          aria-labelledby="popular-tab">
+          <ul class="popular">
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/fashion_1-455x300.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/travel_2-455x300.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/sports_2-455x300.png"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/fashion_2.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="tab-pane"
+          id="comment"
+          role="tabpanel"
+          aria-labelledby="comment-tab">
+          <ul class="comment">
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/fashion_2.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/sports_4-455x300.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/fashion_6.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row align-items-md-center">
+                <div class="col-lg-4 col-4">
+                  <a href="./news.html" target="_blank">
+                  <div class="img-area-follow">
+                    <img
+                      src="./resources/images/fashion_1-455x300.jpg"
+                      alt=""
+                      class="w-100"
+                    />
+                  </div></a>
+                </div>
+                <div class="col-lg-8 col-8 ">
+                  <div class="img-text-follow">
+                   <a href="./categories.html" target="_blank"> <span class="tags fashion">FASHION</span></a>
+                   <a href="./news.html" target="_blank" > <h6>The property complete with a 30-seat screen img</h6></a>
+                    <span>
+                      <i class="fas fa-clock text-dark"></i>
+                      <span class="text-dark"> June 30, 2019 </span></span >
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of lifestyle -->
+
+
+<!-- Second Carousel -->
+<div class="container second-carousel" >
+  <div class="row" >
+    <div class="col-lg-12 col-12" >
+      <div
+        id="carouselExampleIndicators3"
+        class="carousel slide"
+        data-ride="carousel">
+        <ol class="carousel-indicators top-weekend-indicator">
+          <li
+            data-target="#carouselExampleIndicators3"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators3"
+            data-slide-to="1"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators3"
+            data-slide-to="2"
+           
+          ></li> 
+          <li data-target="#carouselExampleIndicators3"
+          data-slide-to="3" ></li> 
+         <li data-target="#carouselExampleIndicators3"
+           data-slide-to="4" >
+          </li>         
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12 px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img                 
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-md-block d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img                    
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                 <a href="./news.html" target="_blank"> <div class="img-area">
+                  <img
+                    
+                    src="./resources/images/tech_1-600x398.jpg"
+                    alt="First slide"
+                  />
+                </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+               <a href="./news.html" target="_blank">   <div class="img-area">
+                <img               
+                  src="./resources/images/tech_1-600x398.jpg"
+                  alt="First slide"
+                />
+              </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12  px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-md-block px-3 d-none">
+                <div class="single-box top-weekend">
+                 <a href="./news.html" target="_blank"> <div class="img-area">
+                  <img                
+                    src="./resources/images/tech_1-600x398.jpg"
+                    alt="First slide"
+                  />
+                </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend ">
+                  <a href="./news.html" target="_blank"><div class="img-area ">
+                    <img                    
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      class="w-100"
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12  px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-md-block px-3 d-none">
+                <div class="single-box top-weekend">
+                 <a href="./news.html" target="_blank"> <div class="img-area">
+                  <img                
+                    src="./resources/images/tech_1-600x398.jpg"
+                    alt="First slide"
+                  />
+                </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend ">
+                  <a href="./news.html" target="_blank"><div class="img-area ">
+                    <img                    
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      class="w-100"
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12  px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-md-block px-3 d-none">
+                <div class="single-box top-weekend">
+                 <a href="./news.html" target="_blank"> <div class="img-area">
+                  <img                
+                    src="./resources/images/tech_1-600x398.jpg"
+                    alt="First slide"
+                  />
+                </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend ">
+                  <a href="./news.html" target="_blank"><div class="img-area ">
+                    <img                    
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      class="w-100"
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-12  px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 d-md-block px-3 d-none">
+                <div class="single-box top-weekend">
+                 <a href="./news.html" target="_blank"> <div class="img-area">
+                  <img                
+                    src="./resources/images/tech_1-600x398.jpg"
+                    alt="First slide"
+                  />
+                </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend ">
+                  <a href="./news.html" target="_blank"><div class="img-area ">
+                    <img                    
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 d-lg-block d-md-none d-none px-3">
+                <div class="single-box top-weekend">
+                  <a href="./news.html" target="_blank"><div class="img-area">
+                    <img
+                      class="w-100"
+                      src="./resources/images/tech_1-600x398.jpg"
+                      alt="First slide"
+                    />
+                  </div></a>
+                  <div class="img-text">
+                    <div class="grid-category">
+                      <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                    </div>
+                    <div class="post-title">
+                      <h5>
+                        <a href="">
+                          The billionaire Philan thropist read to learn more
+                          and city
+                        </a>
+                      </h5>
+                    </div>
+                    <span class="author">
+                      <i class="fas fa-clock"></i>
+                      <a href="">June 30, 2019 </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of second carousel -->
+
+
+<!-- Technology -->
+<div class="container technology mt-3">
+  <div class="row mt-3">
+    <div class="col-xl-8 col-lg-12">
+      <div class="text tech-text my-3">
+        <h6>TECH</h6>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6">         
+          <a href="./news.html" target="_blank"><div class="img-area-tech">
+              <img
+              src="./resources/images/tech_5-600x398.jpg"
+              alt=""
+              class="w-100" /> 
+            </div>
+          </a>         
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6">
+          <div class="grid-category">
+            <a href=""><span class="tags tech">tech</span> </a>
+          </div>
+          <div class="img-text-tech">
+            <a href="./news.html" target="_blank"><h4>The property complete with a 30-seat screen img</h4></a>
+            <ul class="post-meta-info d-flex text-dark ">
+              <li class="author mr-3">
+                <i class="fas fa-user"></i>
+                <a href="" class="text-dark"> digiQoles </a>
+              </li>
+              <li class="author">
+                <i class="fas fa-clock"></i>
+                <a href="" class="text-dark"> June 30, 2019 </a>
+              </li>
+            </ul>
+          </div>
+          <p>
+            Struggling to sell one multi-million dollar home currently on
+            the market won’t stop actress and singer Jennifer Lopez from
+            expanding
+          </p>
+        </div>
+      </div>      
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+             
+               <a href="./news.html" target="_blank"> <div class="img-area-tech"> <img
+                src="./resources/images/tech_2-600x398.jpg"
+                alt=""
+                class="w-100"
+              /> </div></a>
+              
+            </div>
+            <div class="col-md-6">
+              <div class="img-text-tech">
+                <a href="./categories.html"><span class="tags tech">tech</span></a>
+                <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+                <span>
+                  <i class="fas fa-clock text-dark"></i>
+                  <a href="" class="text-dark"> June 30, 2019 </a></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+             
+              <a href="./news.html" target="_blank"> <div class="img-area-tech"> <img
+               src="./resources/images/tech_2-600x398.jpg"
+               alt=""
+               class="w-100"
+             /> </div></a>
+             
+           </div>
+           <div class="col-md-6">
+             <div class="img-text-tech">
+               <a href="./categories.html"><span class="tags tech">tech</span></a>
+               <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+               <span>
+                 <i class="fas fa-clock text-dark"></i>
+                 <a href="" class="text-dark"> June 30, 2019 </a></span
+               >
+             </div>
+           </div>
+          </div>
+        </div> 
+      </div>
+      <div class="row mt-3">
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-6">
+             
+        <a href="./news.html" target="_blank"> <div class="img-area-tech"> <img
+         src="./resources/images/tech_2-600x398.jpg"
+         alt=""
+         class="w-100"
+       /> </div></a>
+       
+     </div>
+     <div class="col-md-6">
+       <div class="img-text-tech">
+         <a href="./categories.html"><span class="tags tech">tech</span></a>
+         <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+         <span>
+           <i class="fas fa-clock text-dark"></i>
+           <a href="" class="text-dark"> June 30, 2019 </a></span
+         >
+       </div>
+     </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-6">
+             
+        <a href="./news.html" target="_blank"> <div class="img-area-tech"> <img
+         src="./resources/images/tech_2-600x398.jpg"
+         alt=""
+         class="w-100"
+       /> </div></a>
+       
+     </div>
+     <div class="col-md-6">
+       <div class="img-text-tech">
+         <a href="./categories.html"><span class="tags tech">tech</span></a>
+         <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+         <span>
+           <i class="fas fa-clock text-dark"></i>
+           <a href="" class="text-dark"> June 30, 2019 </a></span
+         >
+       </div>
+     </div>
+    </div>
+  </div>
+ </div>
+
+
+    </div>
+    <div class="col-xl-4 col-lg-12">
+      <ul class="tech-right">
+        <li style="background-image: url('./resources/images/fashion_4.jpg')">
+          <a href="./categories.html">
+            <span class="tag">Lifestyle</span>
+            <span class="bar"></span>
+            <span class="count">3</span>
+          </a>
+        </li>
+        <li style="background-image: url('./resources/images/tech_2-600x398.jpg');">
+          <a href="./categories.html">
+            <span>Lifestyle</span>
+            <span class="bar"></span>
+            <span class="count">3</span>
+          </a>
+        </li>
+        <li style="background-image: url('./resources/images/health_3-600x398.jpg');">
+          <a href="./categories.html">
+            <span>Lifestyle</span>
+            <span class="bar"></span>
+            <span class="count">3</span>
+          </a>
+        </li>
+        <li style="background-image: url('./resources/images/tech_5-600x398.jpg'); ">
+          <a href="./categories.html">
+            <span>Lifestyle</span>
+            <span class="bar"></span>
+            <span class="count">3</span>
+          </a>
+        </li>
+        <li style="background-image: url('./resources/images/sports_3.jpg')">
+          <a href="./categories.html">
+            <span>Lifestyle</span>
+            <span class="bar"></span>
+            <span class="count">3</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End of technology -->
+
+
+<!-- Middle banner -->
+<div class="container middle-banner">
+  <div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 d-lg-block d-xl-block d-md-block d-none">
+      <img src="./resources/images/content_banner_3.png" alt="" class="w-100" />
+    </div>
+  </div>
+</div> 
+<!-- End of banner -->
+
+
+<!-- Dont Miss and Recent Posts -->
+<div class="container mt-3">     
+  <div class="row mb-3">  
+    <div class="col-xl-8 dontmiss">
+      <div class="text dontmiss-text my-3">
+        <h6>DON'T MISS</h6>
+      </div>
+      <div class="row my-3">
+        <div class="col-xl-4 col-lg-4 mb-3">
+          <div class="single-box-dontmiss">           
+             <a href="./news.html" target="_blank"><div class="img-area-dontmiss"><img
+              src="./resources/images/tech_1-600x398.jpg"
+              alt="First slide"
+            /> </div></a>            
+            <div class="img-text-dontmiss">
+              <div class="grid-category">
+                <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+              </div>
+              <div class="post-title">
+                <a href="./news.html" target="_blank">
+                  <h6>
+                    The billionaire Philan thropist read to learn more and
+                    city</h6>
+                  </a> 
+              </div>
+              <span class="author">
+                <i class="fas fa-clock"></i>
+                <a href="">June 30, 2019 </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 mb-3">
+          <div class="single-box-dontmiss">           
+            <a href="./news.html" target="_blank"><div class="img-area-dontmiss"><img
+             src="./resources/images/tech_1-600x398.jpg"
+             alt="First slide"
+           /> </div></a>            
+           <div class="img-text-dontmiss">
+             <div class="grid-category">
+               <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+             </div>
+             <div class="post-title">
+               <a href="./news.html" target="_blank">
+                 <h6>
+                   The billionaire Philan thropist read to learn more and
+                   city</h6>
+                 </a> 
+             </div>
+             <span class="author">
+               <i class="fas fa-clock"></i>
+               <a href="">June 30, 2019 </a>
+             </span>
+           </div>
+         </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 mb-3">
+          <div class="single-box-dontmiss">           
+            <a href="./news.html" target="_blank"><div class="img-area-dontmiss"><img
+             src="./resources/images/tech_1-600x398.jpg"
+             alt="First slide"
+           /> </div></a>            
+           <div class="img-text-dontmiss">
+             <div class="grid-category">
+               <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+             </div>
+             <div class="post-title">
+               <a href="./news.html" target="_blank">
+                 <h6>
+                   The billionaire Philan thropist read to learn more and
+                   city</h6>
+                 </a> 
+             </div>
+             <span class="author">
+               <i class="fas fa-clock"></i>
+               <a href="">June 30, 2019 </a>
+             </span>
+           </div>
+         </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-xl-4 col-lg-4 mb-3">
+          <div class="single-box-dontmiss">           
+            <a href="./news.html" target="_blank"><div class="img-area-dontmiss"><img
+             src="./resources/images/tech_1-600x398.jpg"
+             alt="First slide"
+           /> </div></a>            
+           <div class="img-text-dontmiss">
+             <div class="grid-category">
+               <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+             </div>
+             <div class="post-title">
+               <a href="./news.html" target="_blank">
+                 <h6>
+                   The billionaire Philan thropist read to learn more and
+                   city</h6>
+                 </a> 
+             </div>
+             <span class="author">
+               <i class="fas fa-clock"></i>
+               <a href="">June 30, 2019 </a>
+             </span>
+           </div>
+         </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 mb-3">
+          <div class="single-box-dontmiss">           
+            <a href="./news.html" target="_blank"><div class="img-area-dontmiss"><img
+             src="./resources/images/tech_1-600x398.jpg"
+             alt="First slide"
+           /> </div></a>            
+           <div class="img-text-dontmiss">
+             <div class="grid-category">
+               <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+             </div>
+             <div class="post-title">
+               <a href="./news.html" target="_blank">
+                 <h6>
+                   The billionaire Philan thropist read to learn more and
+                   city</h6>
+                 </a> 
+             </div>
+             <span class="author">
+               <i class="fas fa-clock"></i>
+               <a href="">June 30, 2019 </a>
+             </span>
+           </div>
+         </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 mb-3">
+          <div class="single-box-dontmiss">           
+            <a href="./news.html" target="_blank"><div class="img-area-dontmiss"><img
+             src="./resources/images/tech_1-600x398.jpg"
+             alt="First slide"
+           /> </div></a>            
+           <div class="img-text-dontmiss">
+             <div class="grid-category">
+               <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+             </div>
+             <div class="post-title">
+               <a href="./news.html" target="_blank">
+                 <h6>
+                   The billionaire Philan thropist read to learn more and
+                   city</h6>
+                 </a> 
+             </div>
+             <span class="author">
+               <i class="fas fa-clock"></i>
+               <a href="">June 30, 2019 </a>
+             </span>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 recent-post">
+      <div class="text recent-post-text my-3">
+        <h6>RECENT POSTS</h6>
+      </div>
+      <ul>
+        <li>
+          <div class="row my-3 align-items-md-center" >
+            <div class="col-xl-5 col-lg-5 col-md-5">              
+                <a href="./news.html" target="_blank"><div class="img-area-recent"><img src="./resources/images/fashion_2.jpg" alt="" /></div></a>             
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7">
+              <div class="img-text-recent">
+               <a href="#"> <span class="tags fashion">FASHION</span></a>
+                <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+                <span>
+                  <i class="fas fa-clock text-dark"></i>
+                  <a href="" class="text-dark"> June 30, 2019 </a>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row my-3 align-items-md-center">
+            <div class="col-xl-5 col-lg-5 col-md-5">
+              <a href="./news.html" target="_blank"><div class="img-area-recent"><img src="./resources/images/fashion_2.jpg" alt="" /></div></a>        
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7">
+              <div class="img-text-recent">
+                <a href="#"><span class="tags travel">Travel</span></a>
+               <a href="./news.html" target="_blank"> <h6>The property complete with a 30-seat screen img</h6></a>
+                <span>
+                  <i class="fas fa-clock text-dark"></i>
+                  <a href="" class="text-dark"> June 30, 2019 </a></span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row my-3 align-items-md-center">
+            <div class="col-xl-5 col-lg-5 col-md-5">
+              <a href="./news.html" target="_blank"><div class="img-area-recent"><img src="./resources/images/fashion_2.jpg" alt="" /></div></a>        
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7">
+              <div class="img-text-recent">
+                <a href="#"><span class="tags health">Health</span></a>
+                <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+                <span>
+                  <i class="fas fa-clock text-dark"></i>
+                  <a href="" class="text-dark"> June 30, 2019 </a></span
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row my-3 align-items-md-center">
+            <div class="col-xl-5 col-lg-5 col-md-5">
+              <a href="./news.html" target="_blank"><div class="img-area-recent"><img src="./resources/images/fashion_2.jpg" alt="" /></div></a>        
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7">
+              <div class="img-text-recent">
+               <a href="#"> <span class="tags sport">sports</span></a>
+                <a href="./news.html" target="_blank"><h6>The property complete with a 30-seat screen img</h6></a>
+                <span>
+                  <i class="fas fa-clock text-dark"></i>
+                  <a href="" class="text-dark"> June 30, 2019 </a></span
+                >
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End of dont miss and recent posts -->
+ 
+
+<!-- Third Carousel -->
+<div class="container-fluid slider px-3 mb-5">
+  <div class="row">
+    <div class="col-xl-12 " >
+      <div
+        id="carouselExampleSlidesOnly3"
+        class="carousel slide"
+        data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-xl-3 col-lg-6 d-lg-block d-md-block col-md-12 slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 d-lg-block d-md-none d-none slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-3 d-xl-block  d-md-none d-none slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-3 d-xl-block  d-md-none d-none slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-xl-3 col-lg-6 d-lg-block d-md-block col-md-12  slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 d-lg-block d-md-none d-none slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-3 d-xl-block d-md-none d-lg-none d-none slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-3 d-xl-block d-md-none d-lg-none d-none slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-xl-3 col-lg-6 d-lg-block d-md-block col-md-12 slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 d-lg-block d-md-none d-none slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-3 d-xl-block d-md-none d-lg-none d-none slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-3 d-xl-block d-md-none d-lg-none d-none slide">
+                <a href="./news.html" target="_blank" class="slide-img"><img src="./resources/images/fashion_4.jpg" alt="" /></a>    
+                <div class="slide-text">
+                  <div class="grid-category">
+                    <a href=""><span class="tags fashion">Fashion</span></a> <a href=""><span class="tags lifestyle">Lifestyle</span></a>
+                  </div>
+                  <div class="post-title">
+                    <h3>
+                      <a href="">
+                        The billionaire Philan thropist read to learn more
+                        and city
+                      </a>
+                    </h3>
+                  </div>
+                  <span class="author">
+                    <i class="fas fa-clock"></i>
+                    <a href="">June 30, 2019 </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>                           
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of third carousel -->
+
+
+<!-- Read next -->
+<div class="container read-next mt-5">
+  <div class="text my-3">
+    <h6>READ NEXT</h6>
+  </div>
+  <div class="row">
+    <div class="col-xl-8 col-lg-12 my-3">
+      <div class="row ">
+        <div class="col-xl-6 col-lg-6 col-md-6 mb-3">
+          <div class="single-box-read-next">            
+              <a href="./news.html" target="_blank"><div class="img-area-read-next"> <img src="./resources/images/food_6-600x398.jpg" alt="" class="w-100"/> </div></a>           
+              <div class="img-text-read-next">
+                <a href="./news.html" target="_blank"><h4>The property complete with a 30-seat screen img</h4></a>  
+                <span class="author">
+                  <i class="fas fa-user"></i>
+                  <span href="" class="text-dark"> digiQoles </span>
+                </span>
+                <span class="author">
+                  <i class="fas fa-clock"></i>
+                  <span href="" class="text-dark"> June 30, 2019 </span>
+                </span>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 mb-3">
+          <div class="single-box-read-next">
+            <a href="./news.html" target="_blank"><div class="img-area-read-next"> <img src="./resources/images/food_6-600x398.jpg" alt="" class="w-100"/> </div></a>       
+            <div class="img-text-read-next">
+              <a href="./news.html" target="_blank"><h4>The property complete with a 30-seat screen img</h4></a>  
+              <span class="author">
+                <i class="fas fa-user"></i>
+                <span href="" class="text-dark"> digiQoles </span>
+              </span>
+              <span class="author">
+                <i class="fas fa-clock"></i>
+                <span href="" class="text-dark"> June 30, 2019 </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 mb-3">
+          <div class="single-box-read-next">
+            <a href="./news.html" target="_blank"><div class="img-area-read-next"> <img src="./resources/images/food_6-600x398.jpg" alt="" class="w-100"/> </div></a>       
+            <div class="img-text-read-next">
+              <a href="./news.html" target="_blank"><h4>The property complete with a 30-seat screen img</h4></a>  
+              <span class="author">
+                <i class="fas fa-user"></i>
+                <span href="" class="text-dark"> digiQoles </span>
+              </span>
+              <span class="author">
+                <i class="fas fa-clock"></i>
+                <span href="" class="text-dark"> June 30, 2019 </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 mb-3">
+          <div class="single-box-read-next">
+            <a href="./news.html" target="_blank"><div class="img-area-read-next"> <img src="./resources/images/food_6-600x398.jpg" alt="" class="w-100"/> </div></a>       
+             <div class="img-text-read-next">
+               <a href="./news.html" target="_blank"><h4>The property complete with a 30-seat screen img</h4></a>  
+               <span class="author">
+                 <i class="fas fa-user"></i>
+                 <span href="" class="text-dark"> digiQoles </span>
+               </span>
+               <span class="author">
+                 <i class="fas fa-clock"></i>
+                 <span href="" class="text-dark"> June 30, 2019 </span>
+               </span>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-12" >
+      <div class="ts-author-comments">  
+        <div class="text recent-comment my-3">
+          <h6>Recent comments</h6>
+        </div>
+        <div class="row ts-comments-row align-items-center mb-5">
+        <div class="col-lg-4 col-md-2 align-item-center" > 
+           <div class="ts-author-media">
+              <div class="ts-author-thumb"> 
+                  <img alt='' src="./resources/images/6b622b6dde539b8091333c656733c122.png"  class='avatar avatar-96 photo' height='96' width='96'  />
+              </div> 
+              <div class="ts-author-meta"> 
+                 <span>14 Jul 19 </span>                        
+              </div>
+           </div>
+        </div> 
+        <div class="col-lg-8 col-md-10">
+            <div class="ts-author-content">
+                  <div class="comment"> 
+                      <a href="#">
+                          Hidden Hills property with mountain and city views boasts nine bed rooms, including a big 
+                          </a>
+                      </div> <br>
+                  <div class="ts-author">
+                      by 
+                      <a href="http://blank.com" > 
+                          John Doe 
+                      </a> 
+                  </div> 
+            </div>
+        </div> 
+        </div>  
+        <div class="row ts-comments-row align-items-center mb-5">
+      <div class="col-lg-4 col-md-2"> 
+         <div class="ts-author-media">
+            <div class="ts-author-thumb"> 
+                <img alt='' src="./resources/images/6b622b6dde539b8091333c656733c122.png"  class='avatar avatar-96 photo' height='96' width='96'  />
+            </div> 
+            <div class="ts-author-meta"> 
+               <span>14 Jul 19 </span>                        
+            </div>
+         </div>
+      </div> 
+      <div class="col-lg-8 col-md-10">
+          <div class="ts-author-content">
+                <div class="comment"> 
+                    <a href="#">
+                        Hidden Hills property with mountain and city views boasts nine bed rooms, including a big 
+                        </a>
+                    </div> <br>
+                <div class="ts-author">
+                    by 
+                    <a href="http://blank.com" > 
+                        John Doe 
+                    </a> 
+                </div> 
+          </div>
+      </div> 
+        </div> 
+        <div class="row ts-comments-row align-items-center mb-5 ">
+        <div class="col-lg-4 col-md-2"> 
+           <div class="ts-author-media">
+              <div class="ts-author-thumb"> 
+                  <img alt='' src="./resources/images/6b622b6dde539b8091333c656733c122.png"  class='avatar avatar-96 photo' height='96' width='96'  />
+              </div> 
+              <div class="ts-author-meta"> 
+                 <span>14 Jul 19 </span>                        
+              </div>
+           </div>
+        </div> 
+        <div class="col-lg-8 col-md-10">
+            <div class="ts-author-content">
+                  <div class="comment"> 
+                      <a href="#">
+                          Hidden Hills property with mountain and city views boasts nine bed rooms, including a big 
+                          </a>
+                      </div> <br>
+                  <div class="ts-author">
+                      by 
+                      <a href="http://blank.com" > 
+                          John Doe 
+                      </a> 
+                  </div> 
+            </div>
+        </div> 
+        </div>   
+          
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of read next  -->
+
+
+<!-- Last banner -->
+<div class="container last-banner my-3">
+  <div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 d-lg-block d-xl-block d-md-block d-none">
+      <img src="./resources/images/content_banner_2.png" alt="" class="w-100" />
+    </div>
+  </div>
+</div> 
+<!-- End of banner -->
+
+
+<!-- Subscribe -->
+<div class="container-fluid" style="background-image: linear-gradient( 20deg,#f84270 0%,#fe803b 100%);"  >
+  <div class="row " style="margin: unset;">
+    <div class="container">
+      <div class="row align-items-xl-center justify-content-between">
+        <div class="col-xl-7 col-lg-7 col-md-6 col-12"   >
+          <img src="./resources/images/logo-light.png" alt="" style="padding: 40px 0; width: 50%;" >
+          </div>
+     
+          <div class="col-xl-5 col-lg-5 col-md-6 col-12 p-3 align-self-center" style="padding: unset; ">  
+          <div class="newsletter-area">
+            <form id="form-1"   >
+              <div class="footer-newsletter">
+              <p>
+                <i class="fa fa-paper-plane" ></i>
+                <input type="email"  name="EMAIL" placeholder="Your email" required />
+              </p>
+              <input type="submit" value="Subscribe" />
+              </div>
+           </form>
+          </div>
+      
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of subscribe -->
+
+
+<!-- Footer -->
+<footer class="ts-footer" >
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-12 fadeInUp">
+        <div class="footer-left-widget">
+          <h3 class="widget-title">
+            <span>About Us</span>
+          </h3>			
+          <div class="textwidget">
+            <p>Hidden Hills property with mountain and city view boast nine bedrooms including a master suite with private terrace and an entertainment. wing which includes a 20-seat theater.</p>
+          </div>
+        </div>
+        <div class="widget_text footer-left-widget">
+        <div class="textwidget custom-html-widget">
+            <ul class="footer-info">
+              <li>  
+                <i class="fa fa-home"></i> 15 Cliff St, New York NY 10038, USA</li>
+              <li> 
+                <i class="fa fa-phone"></i> +1 212-602-9641</li>
+              <li>
+                <i class="fa fa-envelope"></i>info@example.com</li>
+            </ul>
+        </div>
+        </div>
+  
+        <div class="footer-left-widget">		
+        <div class="footer-social">
+        <ul class="xs-social-list xs-social-list-v6 digiqole-social-list">
+          <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+      </div><!-- Footer social end -->
+       </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-12  offset-lg-1 ">
+       <div class="footer-widget footer-center-widget">
+         <h3 class="widget-title"><span>Popular Post</span></h3>	
+         	<div class="recent-posts-widget post-list-item">
+            <div class="post-tab-list">
+              <div class="post-content media">
+                <div class="row mb-3">
+                  <div class="col-xl-6 col-lg-5 col-md-6 col-6">
+                    <div class="post-thumb">
+                      <a href="#" rel="bookmark" >
+                       <img src="./resources/images/travel_1.jpg" alt="">
+                      </a>
+                    </div> 
+                  </div>
+                  <div class="col-xl-6 col-lg-7  col-md-6 col-6"  >
+                    <div class="post-info media-body">
+                        <h6 class="post-title">
+                          <a href="#" rel="bookmark" title="Ratcliffe to be Director of nation  talent Trump ignored">Ratcliffe to be Director of</a>
+                        </h6>
+                        <div class="post-meta"><span class="post-date" ><i class="fa fa-clock" aria-hidden="true"></i> July 10, 2019</span></div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post-content media">
+                <div class="row mb-3">
+                  <div class="col-xl-6 col-lg-6  col-md-6 col-6">
+                    <div class="post-thumb">
+                      <a href="#" rel="bookmark" >
+                       <img src="./resources/images/travel_1.jpg" alt="">
+                      </a>
+                    </div>
+                     
+                  </div>
+                  <div class="col-xl-6 col-lg-6  col-md-6 col-6">
+                    <div class="post-info media-body">
+                      
+                        <h6 class="post-title">
+                          <a href="#" rel="bookmark" title="Ratcliffe to be Director of nation  talent Trump ignored">Ratcliffe to be Director of</a>
+                        </h6>
+                        <div class="post-meta"><span class="post-date" ><i class="fa fa-clock" aria-hidden="true"></i> July 10, 2019</span></div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post-content media">
+                <div class="row mb-3">
+                  <div class="col-xl-6 col-lg-6  col-md-6 col-6">
+                    <div class="post-thumb">
+                      <a href="#" rel="bookmark" >
+                       <img src="./resources/images/travel_1.jpg" alt="">
+                      </a>
+                    </div>                  
+                  </div>
+                  <div class="col-xl-6 col-lg-6  col-md-6 col-6">
+                    <div class="post-info media-body">                     
+                        <h6 class="post-title">
+                          <a href="#" rel="bookmark" title="Ratcliffe to be Director of nation  talent Trump ignored">Ratcliffe to be Director of</a>
+                        </h6>
+                        <div class="post-meta"><span class="post-date" ><i class="fa fa-clock" aria-hidden="true"></i> July 10, 2019</span></div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="post-content media">
+                <div class="row mb-3">
+                  <div class="col-xl-6 col-lg-6  col-md-6 col-6" >
+                    <div class="post-thumb">
+                      <a href="#" rel="bookmark" >
+                       <img src="./resources/images/travel_1.jpg" alt="">
+                      </a>
+                    </div>
+                     
+                  </div>
+                  <div class="col-xl-6 col-lg-6  col-md-6 col-6">
+                    <div class="post-info media-body">
+                     
+                        <h6 class="post-title">
+                          <a href="#" rel="bookmark" title="Ratcliffe to be Director of nation  talent Trump ignored">Ratcliffe to be Director of</a>
+                        </h6>
+                        <div class="post-meta"><span class="post-date" ><i class="fa fa-clock" aria-hidden="true"></i> July 10, 2019</span></div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>                  
+      </div>
+      <div class="col-xl-4 col-lg-3 col-md-6 col-12 my-3">
+        <div class="footer-widget footer-right-widget">
+          <a href="#">
+            <img width="285" height="375" src="./resources/images/widget_banner.png" class="image wp-image-3495  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" /></a>
+          </div>                     
+      </div>
+    </div>  
+   </div>     
+</footer>
+<!-- End of footer -->
+
+
+<!-- Copyright -->
+<div class="copy-right">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-11 col-lg-11 align-items-xl-center align-items-lg-center">
+        <div class="copyright-text text-center">
+          <p> © 2021, Digiqole - News Magazine WordPress Theme. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="col-xl-1 col-lg-1">
+        <div class="backTo" id="backTo" onclick="topFunction()">
+          <a href="#"><i class="fas fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of copyright -->
+
+
+
+<!-- SCRIPTS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
